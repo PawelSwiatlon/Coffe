@@ -1,15 +1,28 @@
+@import '../../../index.module.scss';
 .wrapper {
-    width: 30%;
-}
-.hamburger {
-    width: 30px;
-    height: 30px;
+    width: 300px;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    & p {
-        width: 100%;
-        height: 2px;
-        background-color: whitesmoke;
+    align-items: center;
+    font-family: $primaryFont;
+}
+@mixin hover {
+    color: $secondary;
+    transform: scale(1.4);
+}
+.navItemLink {
+    padding: 0 5px;
+    position: relative;
+    font-size: 1vw;
+    transition: .3s ;
+    color: $primary;
+    text-decoration: none;
+    cursor: pointer;
+
+    &Active  {
+        @include hover;
     }
+}
+.navItemLink:hover {
+    @include hover;
 }

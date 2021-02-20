@@ -6,7 +6,7 @@ import NavItems from './NavItems/NavItems';
 const Nav = () => {
     return(
         <div className={styles.wrapper}>
-            <h1>Coffee</h1>
+            <h1>Cof<span>fee</span></h1>
             <NavItems/>
         </div>
     );

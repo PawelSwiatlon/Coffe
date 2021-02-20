@@ -1,17 +1,26 @@
-import React, { useState } from 'react';
-import styles from './NavItems.module.scss'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-const hamburgerHandler = () => {
+import styles from './NavItems.module.scss';
 
-}
 const NavItems = () => {
     return(
         <div className={styles.wrapper}>
-            <div className={styles.hamburger}>
-                <p></p>
-                <p></p>
-                <p></p>
-            </div>
+            <NavLink exact to="/" 
+                activeClassName={styles.navItemLinkActive}
+                    className={styles.navItemLink}>
+                    Home
+                </NavLink>
+                <NavLink to="/about" 
+                    activeClassName={styles.navItemLinkActive}
+                    className={styles.navItemLink}>
+                    About
+                </NavLink>
+                <NavLink to="/contact" 
+                    activeClassName={styles.navItemLinkActive}
+                    className={styles.navItemLink}>
+                    Contact
+                </NavLink>
         </div>
     );
 }
