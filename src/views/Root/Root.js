@@ -2,7 +2,10 @@ import './Root.module.scss';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Nav from '../../components/Nav/Nav';
-import Home from '../Home/Home';
+
+import HomeView from '../HomeView/HomeView';
+import AboutView from '../AboutView/AboutView';
+import ContactView from '../ContactView/ContactView';
 
 function Root() {
   return (
@@ -10,8 +13,9 @@ function Root() {
       <>
         <Nav/>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={Home} />
+          <Route exact path="/" component={HomeView} />
+          <Route path="/about" component={AboutView} />
+          <Route path="/contact" component={ContactView} />
         </Switch>
       </>
     </BrowserRouter>

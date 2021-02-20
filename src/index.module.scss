@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-$primaryFont: 'Staatliches', cursive;;
+$primaryFont: 'Staatliches', cursive;
 
 // Colors
 $primary: whitesmoke;
 $secondary: #aa3007;
+$black: #000000;
+$gray: #363636;
 
+@mixin backgroundImage($url, $size) {
+  background: {
+    image: url($url);
+    position: center;
+    repeat: no-repeat;
+    size: $size; 
+  };
+}
 *,*::after,*::before {
   margin: 0;
   padding: 0;

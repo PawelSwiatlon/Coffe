@@ -1,62 +1,51 @@
 @import '../../index.module.scss';
 
 .wrapper {
-    background-color: rgba(0,0,0,0.2);
     width: 100%;
     height: 100vh;
-    position: relative;
+}
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.coffeeCup, .text {
+    width: 50%;
+    height: 100%;
 }
 .coffeeCup {   
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: {
-        image: url(../../assets/images/pexels-junior-teixeira-2047899.jpg);
-        position: center;
-        repeat: no-repeat;
-        size: cover; 
-    };
+    @include backgroundImage('assets/images/pexels-junior-teixeira-2047899.jpg', cover);
 }
-.content { 
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    background-color: #000000;
+.text { 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: $black;
     padding: 0 5% 0 10%;
     & h1 {
-        color: whitesmoke;
         font-size: 5vw;
-        font-family: $primaryFont;
         letter-spacing: 10px;
+        font-family: $primaryFont;
+        color: $primary;
         & span {   
-            color: #aa3007;
+            color: $secondary;
         }
     }
     & p {
-        margin-top: 20px;
         width: 60%;
-        color: #363636;
+        margin-top: 20px;
         font-size: 0.8vw;
+        color: $gray;
     }
 }
 .coffeeBag {
+    width: 20%;
+    height: 55%;
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%,-40%);
-    width: 20%;
-    height: 55%;
-    background: {
-        image: url(../../assets/images/popular-coffee-bag.png);
-        position: center;
-        repeat: no-repeat;
-        size: contain; 
-    };
+    @include backgroundImage('assets/images/popular-coffee-bag.png', contain);
+
 }
