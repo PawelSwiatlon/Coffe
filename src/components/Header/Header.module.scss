@@ -48,15 +48,15 @@
 }
 .coffeeBag {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
-    transform: translate(-45%,-30%);
+    transform: translate(-50%,-40%);
     width: 20%;
-    height: 70%;
+    height: 55%;
     background: {
         image: url(../../assets/images/popular-coffee-bag.png);
         position: center;
         repeat: no-repeat;
-        size: cover; 
+        size: contain; 
     };
 }
