@@ -33,9 +33,9 @@
         }
     }
     & p {
-        width: 60%;
         margin-top: 20px;
         font-size: 0.8vw;
+        font-family: $secondaryFont;
         color: $gray;
     }
 }
@@ -46,6 +46,13 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%,-40%);
-    @include backgroundImage('assets/images/popular-coffee-bag.png', contain);
-
+    & p {
+        transition: .3s;
+        width: 100%;
+        height: 100%;
+        @include backgroundImage('assets/images/popular-coffee-bag.png', contain);
+    }
+    &:hover p  {
+        transform: scale(1.05); 
+    }
 }

@@ -1,5 +1,10 @@
+// Font Staatliches
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 $primaryFont: 'Staatliches', cursive;
+
+// Font Montserrat
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&display=swap');
+$secondaryFont: 'Montserrat', sans-serif;
 
 // Colors
 $primary: whitesmoke;
@@ -24,4 +29,5 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: $primary;
 }
