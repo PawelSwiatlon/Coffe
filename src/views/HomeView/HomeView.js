@@ -1,13 +1,15 @@
 import React from 'react';
 
-import About from '../AboutView/AboutView';
-import Header from '../../components/Header/Header';
+import AboutView from '../AboutView/AboutView';
+import HeaderView from '../../components/Header/Header';
+import ContactView from '../ContactView/ContactView';
 
 const HomeView = () => {
     return(
         <div>
-            <Header/>
-            <About/>
+            <HeaderView/>
+            <AboutView/>
+            <ContactView/>
         </div>
     );
 }
