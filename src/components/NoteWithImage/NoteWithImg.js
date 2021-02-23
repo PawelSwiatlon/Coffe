@@ -9,7 +9,7 @@ const NoteWithImg = (props) => {
                     <img src={props.img} alt="Img Error" />
                 </div>
                 <span>
-                    <h1>{props.title}</h1>
+                    <h1>{props.titleBlack}<a>{props.titleOrange}</a></h1>
                     <p>{props.description}</p>
                 </span>
             </div>
@@ -18,7 +18,7 @@ const NoteWithImg = (props) => {
         return(
             <div className={styles.context}>
                 <span>
-                    <h1>{props.title}</h1>
+                    <h1>{props.titleBlack}<a>{props.titleOrange}</a></h1>
                     <p>{props.description}</p>
                 </span>
                 <div className={styles.coffeBags}>

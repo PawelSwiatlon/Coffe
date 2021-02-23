@@ -15,6 +15,9 @@
         font-family: $primaryFont;
         letter-spacing: 5px;
         font-size: 3vw;
+        & span {
+            color: $secondary;
+        }
     }
     & li {
         padding: 5px 0;
