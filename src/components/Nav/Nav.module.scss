@@ -18,6 +18,7 @@
         letter-spacing: 10px;
         color: $primary;
         transition: .3s;
+        font-size: 2vw;
     }
     & h1:hover {
         transform: scale(1.1);
@@ -26,4 +27,13 @@
             color: $secondary;
         }
     }
+}
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        height: 40px;
+    }
+    .wrapper h1 {
+        font-size: 6vw;
+        letter-spacing: 2px;
+    } 
 }

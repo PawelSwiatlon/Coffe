@@ -9,7 +9,7 @@ const ContactView = () => {
             <h1>Contact<span>:</span></h1>
             <ul>
                 <li>Email: pswiatlon02@gmail.com</li>
-                <li>Git: <a href={git}>Github profile</a></li>
+                <li>Git: <a href={git} >Github profile</a></li>
                 <li><span>Hello, the website was created for the visual purpose only.</span></li>
             </ul>
         </div>
